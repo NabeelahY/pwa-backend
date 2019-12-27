@@ -21,7 +21,7 @@ app.get('/', (req, res) => {
   res.send('Hello world!');
 });
 
-app.post('/notifications/subscribe', (req, res) => {
+app.post('notifications/subscribe', (req, res) => {
   const subscription = req.body;
 
   console.log(subscription);
