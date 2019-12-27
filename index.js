@@ -39,6 +39,8 @@ app.post('/notifications/subscribe', (req, res) => {
   res.status(200).json({ success: true });
 });
 
-app.listen(9000, () =>
-  console.log('The server has been started on the port 9000')
+const port = process.env.PORT || 9000;
+
+app.listen(port, () =>
+  console.log(`The server has been started on the port ${port}`)
 );
